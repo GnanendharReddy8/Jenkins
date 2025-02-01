@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'chmod +x HelloWorld.py'
-                sh './HelloWorld.py'
+                sh 'python3 HelloWorld.py'  // Explicitly run Python
             }
         }
 
